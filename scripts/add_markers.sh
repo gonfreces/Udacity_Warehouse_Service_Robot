@@ -8,4 +8,4 @@ xterm -e " source devel/setup.bash "
 xterm -e " roslaunch my_robot warehouse_amcl.launch " &
 sleep 10
 xterm -e " source devel/setup.bash "
-xterm -e " rosrun add_markers add_markers " 
+xterm -e " rosrun add_markers add_markers_p1 " 
