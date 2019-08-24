@@ -203,3 +203,7 @@ include_directories(
 add_executable(add_markers src/add_markers.cpp)
 target_link_libraries(add_markers ${catkin_LIBRARIES})
 add_dependencies(add_markers add_markers_generate_messages_cpp)
+
+add_executable(add_markers_p1 src/add_markers_p1.cpp)
+target_link_libraries(add_markers_p1 ${catkin_LIBRARIES})
+add_dependencies(add_markers_p1 add_markers_generate_messages_cpp)
