@@ -1,0 +1,11 @@
+global_costmap:
+   global_frame: map # CANNOT USE TAB FOR SPACING IN YAML FILES TO MAINTAIN PORTABILITY
+   robot_base_frame: robot_footprint
+   # Lower if you receive warning on 'Transform Timeout' and 'Map Update Loop'
+   update_frequency: 1.0 
+   publish_frequency: 1.0
+   width: 20.0
+   height: 20.0
+   resolution: 0.05
+   static_map: true
+   rolling_window: false

@@ -1,0 +1,11 @@
+local_costmap:
+   global_frame: odom # CANNOT USE TAB FOR SPACING IN YAML FILES TO MAINTAIN PORTABILITY
+   robot_base_frame: robot_footprint
+# Lower if you receive warning on 'Transform Timeout' and 'Map Update Loop'
+   update_frequency: 5.0 #5.0
+   publish_frequency: 5.0 #5.0
+   width: 1.0 #10.0 1.0
+   height: 1.0 #10.0 1.0
+   resolution: 0.01
+   static_map: false
+   rolling_window: true
