@@ -2,16 +2,10 @@
 #include <visualization_msgs/Marker.h>
 #include <std_msgs/Float64.h>
 #include <add_markers/ReachGoal.h>
-//#include "geometry_msgs/Twist.h"
 
-bool handle_transport_request(add_markers::ReachGoal::Request& req,
-    add_markers::ReachGoal::Response& res)
+bool handle_transport_request(add_markers::ReachGoal::Request& req, add_markers::ReachGoal::Response& res)
 {
-		ROS_INFO("ReachGoal request received - %s", req.msg_sent);
-		
-		if (req.msg_sent == "Pickup"){
-
-
+	ROS_INFO("ReachGoal request received - %s", req.msg_sent);
 }
 
 int main( int argc, char** argv )
@@ -20,8 +14,8 @@ int main( int argc, char** argv )
   ros::NodeHandle n;
   ros::Rate r(1);
   ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
-	//ros::Subscriber  = n.subscribe("/topic_name", queue_size, callback_function);
-	ros::ServiceServer service = n.advertiseService("/add_markers/transport_cube", handle_transport_request);
+  //ros::Subscriber  = n.subscribe("/topic_name", queue_size, callback_function);
+  ros::ServiceServer service = n.advertiseService("/add_markers/transport_cube", handle_transport_request);
   //ROS_INFO("Ready to send joint commands");
 
   // Set our initial shape type to be a cube
